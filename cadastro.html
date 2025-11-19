@@ -1,0 +1,89 @@
+<!-- ==============================
+     cadastro.html – Formulário de Cadastro Inteligente (atualizado)
+     ============================== -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - ONG 5 Fs</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo da ONG 5 Fs" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="cadastro.html">Cadastre-se</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cadastro">
+            <h1>Cadastro de Participação</h1>
+            <p>Preencha o formulário abaixo para se cadastrar como voluntário, doador ou participante dos projetos da ONG 5 Fs.</p>
+
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Informações Pessoais</legend>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" pattern="\(\d{2}\)\d{5}-\d{4}" placeholder="(00)00000-0000" required>
+
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Localização</legend>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" pattern="\d{5}-\d{3}" placeholder="00000-000" required>
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" disabled placeholder="Será preenchido automaticamente">
+
+                    <label for="estado">Estado:</label>
+                    <input type="text" id="estado" name="estado" disabled placeholder="Será preenchido automaticamente">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Formação Jurídica</legend>
+                    <label><input type="radio" name="formacao" value="formado" required> Sou formado em Direito</label><br>
+                    <label><input type="radio" name="formacao" value="estudante"> Sou estudante de Direito</label><br>
+                    <label><input type="radio" name="formacao" value="nao"> Não sou da área de Direito</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Experiências e Formações Complementares</legend>
+                    <label for="experiencias">Conte um pouco sobre suas experiências e formações:</label>
+                    <textarea id="experiencias" name="experiencias" rows="5" placeholder="Ex: participei de projetos sociais, cursos de mediação, etc."></textarea>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Tipo de Participação</legend>
+                    <label><input type="radio" name="tipo" value="voluntario" required> Voluntário</label>
+                    <label><input type="radio" name="tipo" value="doador"> Doador</label>
+                    <label><input type="radio" name="tipo" value="participante"> Participante</label>
+                </fieldset>
+
+                <button type="submit">Enviar Cadastro</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 - ONG 5 Fs. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
