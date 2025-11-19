@@ -1,0 +1,109 @@
+/***************************************************************************************************
+ * layout.css – Estrutura principal e grid
+ ***************************************************************************************************/
+
+/* ==========================
+   ESTRUTURA GERAL DA PÁGINA
+   ========================== */
+body {
+  margin: 0;
+  font-family: var(--fonte-texto);
+  font-size: var(--fs-md);
+  color: var(--cor-neutra-escura);
+  background-color: var(--cor-neutra-media);
+}
+
+header, footer {
+  background-color: var(--cor-primaria);
+  color: var(--cor-neutra-clara);
+  padding: var(--esp-2) var(--esp-3);
+}
+
+main {
+  padding: var(--esp-3) var(--esp-4);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ==========================
+   CABEÇALHO E NAVEGAÇÃO
+   ========================== */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: var(--sombra-leve);
+}
+
+header .logo {
+  height: 60px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--esp-3);
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  color: var(--cor-neutra-clara);
+  text-decoration: none;
+  font-weight: bold;
+  transition: var(--transicao-base);
+}
+
+nav a:hover {
+  color: var(--cor-destaque);
+}
+
+/* ==========================
+   SISTEMA DE GRID (12 colunas)
+   ========================== */
+.container-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: var(--esp-3);
+}
+
+.col-12 { grid-column: span 12; }
+.col-6  { grid-column: span 6; }
+.col-4  { grid-column: span 4; }
+.col-3  { grid-column: span 3; }
+
+/* ==========================
+   SEÇÕES PRINCIPAIS
+   ========================== */
+section {
+  margin-bottom: var(--esp-5);
+  padding: var(--esp-3);
+  background-color: var(--cor-neutra-clara);
+  border-radius: var(--borda-raio);
+  box-shadow: var(--sombra-leve);
+}
+
+section h1, section h2, section h3 {
+  font-family: var(--fonte-titulo);
+  margin-top: 0;
+  color: var(--cor-primaria);
+}
+
+/* ==========================
+   RODAPÉ
+   ========================== */
+footer {
+  text-align: center;
+  font-size: var(--fs-sm);
+  box-shadow: var(--sombra-leve);
+}
+
+/* ==========================
+   AJUSTES DE CONTAINER
+   ========================== */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,59 @@
+/***************************************************************************************************
+* variaveis.css – Design System base
+***************************************************************************************************/
+
+
+:root {
+/* ==========================
+PALETA DE CORES PRINCIPAL
+========================== */
+--cor-primaria: #2b7a78;            /* Verde azulado – estabilidade financeira */
+--cor-secundaria: #3aafa9;          /* Verde claro – esperança e empatia */
+--cor-destaque: #f6bd60;            /* Dourado – prosperidade e sucesso */
+--cor-alerta: #f28482;              /* Vermelho suave – atenção e erro */
+--cor-sucesso: #84a59d;             /* Verde acinzentado – confirmação */
+--cor-neutra-escura: #17252a;       /* Preto azulado – texto principal */
+--cor-neutra-media: #def2f1;        /* Fundo suave */
+--cor-neutra-clara: #ffffff;        /* Branco puro */
+
+
+/* ==========================
+TIPOGRAFIA
+========================== */
+--fonte-titulo: 'Poppins', sans-serif;
+--fonte-texto: 'Open Sans', sans-serif;
+
+
+/* Hierarquia de tamanhos de fonte */
+--fs-xxl: 2.5rem;                   /* títulos principais */
+--fs-xl: 2rem;                      /* subtítulos */
+--fs-lg: 1.5rem;                    /* seções e botões */
+--fs-md: 1rem;                      /* texto padrão */
+--fs-sm: 0.875rem;                  /* textos auxiliares */
+
+
+/* ==========================
+ESPAÇAMENTOS MODULARES (8px scale)
+========================== */
+--esp-1: 8px;
+--esp-2: 16px;
+--esp-3: 24px;
+--esp-4: 32px;
+--esp-5: 48px;
+--esp-6: 64px;
+
+
+/* ==========================
+BORDAS E SOMBRAS
+========================== */
+--borda-raio: 8px;
+--sombra-leve: 0px 2px 4px rgba(0, 0, 0, 0.1);
+--sombra-media: 0px 4px 8px rgba(0, 0, 0, 0.15);
+--sombra-intensa: 0px 6px 12px rgba(0, 0, 0, 0.25);
+
+
+/* ==========================
+TRANSIÇÕES E ANIMAÇÕES
+========================== */
+--transicao-base: all 0.3s ease-in-out;
+}

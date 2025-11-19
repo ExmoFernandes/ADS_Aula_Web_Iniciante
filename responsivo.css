@@ -1,0 +1,106 @@
+/***************************************************************************************************
+ * responsivo.css – Ajustes mobile-first e breakpoints
+ ***************************************************************************************************/
+
+/* ==========================
+   PADRÃO MOBILE-FIRST
+   ========================== */
+
+body {
+  font-size: var(--fs-md);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+/* Menu padrão mobile fechado */
+header nav ul {
+  flex-direction: column;
+  background-color: var(--cor-primaria);
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  display: none;
+  padding: var(--esp-2) 0;
+}
+
+/* Quando o menu estiver ativo (JS adiciona classe .mostrar) */
+header nav ul.mostrar {
+  display: flex;
+}
+
+/* Ícone do menu hambúrguer (visível só em mobile) */
+.menu-toggle {
+  display: block;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--cor-neutra-clara);
+  font-size: 1.8rem;
+}
+
+/* ==========================
+   BREAKPOINTS RESPONSIVOS
+   ========================== */
+
+/* 📱 Telas pequenas (>=480px) */
+@media (min-width: 480px) {
+  nav ul {
+    gap: var(--esp-2);
+  }
+}
+
+/* 💻 Tablets (>=768px) */
+@media (min-width: 768px) {
+  header nav ul {
+    position: static;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+    background: none;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+
+  .col-6 { grid-column: span 6; }
+  .col-4 { grid-column: span 4; }
+}
+
+/* 🖥️ Notebooks (>=1024px) */
+@media (min-width: 1024px) {
+  main {
+    padding: var(--esp-4);
+  }
+
+  .card {
+    padding: var(--esp-4);
+  }
+
+  nav a {
+    font-size: var(--fs-md);
+  }
+}
+
+/* 🖥️ Desktops grandes (>=1280px) */
+@media (min-width: 1280px) {
+  .container-grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  section {
+    padding: var(--esp-4);
+  }
+}
+
+/* 🖥️ Ultra-wide (>=1440px) */
+@media (min-width: 1440px) {
+  body {
+    font-size: var(--fs-lg);
+  }
+
+  header, footer {
+    padding: var(--esp-3) var(--esp-5);
+  }
+}
