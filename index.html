@@ -11,15 +11,20 @@
 </head>
 <body>
     <header>
-        <img src="imagens/logo.png" alt="Logo da ONG 5 Fs" class="logo">
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Cadastre-se</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <img src="imagens/logo.png" alt="Logo da ONG 5 Fs" class="logo">
+                    
+            <nav>
+                <button class="menu-toggle">☰</button> <!-- visível no mobile -->
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#cadastro">Cadastro</a></li>
+                    <li><a href="#contato">Fale Conosco</a></li>
+                </ul>
+            </nav>
+        
+        </div>
     </header>
 
     <main>
@@ -57,7 +62,14 @@
     <footer id="contato">
         <p><strong>Fale Conosco:</strong> contato@5fs.org.br | (11) 90000-0000</p>
         <p>© 2025 - ONG 5 Fs. Todos os direitos reservados.</p>
-        <img src="dog photo.gif" alt="Eita" >
+        <img src="dog photo.png" alt="Eita" >
     </footer>
+    
+    <!-- Spa Navigator -->
+    <script src="js/spa.js"></script>
+    
+    <script src="js/main.js"></script>
+
+    
 </body>
 </html>
